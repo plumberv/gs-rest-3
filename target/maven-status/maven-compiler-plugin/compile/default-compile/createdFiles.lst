@@ -1,0 +1,4 @@
+com/example/restservice/controller/own.class
+com/example/restservice/RestServiceApplication.class
+com/example/restservice/controller/greeting.class
+com/example/restservice/model/Greeting.class
