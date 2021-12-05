@@ -1,4 +1,4 @@
-com/example/restservice/controller/own.class
+com/example/restservice/controller/GetItem.class
+com/example/restservice/model/DRIP.class
 com/example/restservice/RestServiceApplication.class
-com/example/restservice/controller/greeting.class
-com/example/restservice/model/Greeting.class
+com/example/restservice/controller/AddItem.class

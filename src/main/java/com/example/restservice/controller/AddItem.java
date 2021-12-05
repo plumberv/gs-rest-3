@@ -12,22 +12,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @RestController
-public class own {
+public class AddItem {
 
-	private static final String template = "Heyhey, %s!";
+	private static final String template = "%s";
 	private final AtomicLong counter = new AtomicLong();
-
+	private static Logger LOGGER = LoggerFactory.getLogger(AddItem.class);	
 	
-	private static Logger LOGGER = LoggerFactory.getLogger(own.class);
-	
-	
-	@GetMapping("/own")
-	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/AddItem")
+	public DRIP AddItem(@RequestParam(value = "value", defaultValue = "Unknown") String value) {
 		
-		LOGGER.info("v1 gs-rest-service owncontroller");
-		System.out.println("v2 gs-rest-service");
+		LOGGER.info(">> gs-rest AddItem controller");
 		
-		return new Greeting(counter.incrementAndGet(), String.format(template, name));
+		return new DRIP(counter.incrementAndGet(), String.format(template, value));
 			
 	}
 }

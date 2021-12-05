@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class greeting {
+public class GetItem {
 
-	private static final String template = "Hello, %s!";
+	private static final String template = "%s";
 	private final AtomicLong counter = new AtomicLong();
 
-	@GetMapping("/greeting")
-	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Greeting(counter.incrementAndGet(), String.format(template, name));
+	@GetMapping("/GetItem")
+	public DRIP GetIem(@RequestParam(value = "value", defaultValue = "Unknown") String value) {
+		return new DRIP(counter.incrementAndGet(), String.format(template, value));
 	}
 }
