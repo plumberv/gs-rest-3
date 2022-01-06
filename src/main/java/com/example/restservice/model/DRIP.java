@@ -18,4 +18,8 @@ public class DRIP {
 	public String getValue() {
 		return value;
 	}
+	
+	public String getValueById(long id) {
+		return "dummy";
+	}
 }

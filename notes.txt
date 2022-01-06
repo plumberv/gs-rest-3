@@ -1,0 +1,35 @@
+@RestController
+public class ResourceController {
+
+    @Autowired
+    ResourceService resourceService;
+    
+    @PostMapping("/saveTeacher")
+    public void saveTeacher(@RequestBody Teacher teacher){
+        resourceService.saveTeacher(teacher);
+    }
+}
+
+@Service
+public class ResourceService {
+
+    @Autowired
+    ResourceRepository repository;
+    
+    public void saveTeacher(Teacher teacher){
+        repository.saveTeacher(teacher);
+    }
+}
+
+@Repository
+public class ResourceRepository {
+
+    @PersistenceContext
+    EntityManager entityManager;
+    
+    
+    @Transactional
+    public void saveTeacher(Teacher teacher){
+        entityManager.persist(teacher);
+    }
+}
