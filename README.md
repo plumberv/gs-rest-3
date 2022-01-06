@@ -1,6 +1,6 @@
 # gs-rest-3
 
-This project implements a simple springboot rest controller together with CRUD repository to hold temporary objects in memory.
+This project implements a simple SpringBoot rest controller together with CRUD repository to hold temporary objects in memory.
 
 ## Credits
 
@@ -14,7 +14,10 @@ https://spring.io/guides/gs/accessing-data-jpa/
 
 This project requires a maven build system and java run time environment.
 
-## Installing
+## Installation
 
 * mvn clean install
-* java -jar <built>.jar
+
+## Execution
+
+* java -jar [built file].jar
