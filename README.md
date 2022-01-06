@@ -9,3 +9,12 @@ This project is modified based on the initializer example from spring.io. Please
 ```
 https://spring.io/guides/gs/accessing-data-jpa/
 ```
+
+## Dependencies
+
+This project requires a maven build system and java run time environment.
+
+## Installing
+
+* mvn clean install
+* java -jar <built>.jar
